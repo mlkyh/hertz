@@ -1,0 +1,5 @@
+com/example/hertz/BuildConfig.java
+ com.example.hertz.BuildConfig
+com/example/hertz/MainActivity.java
+ com.example.hertz.MainActivity
+ com.example.hertz.MainActivity$1
