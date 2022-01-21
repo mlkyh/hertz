@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtFm"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="98dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/Text10"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="109dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/gpa" />
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="87dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/flat_modulus" />
+
+    <EditText
+        android:id="@+id/edtFp"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/edtL"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/start"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/edtBr"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+         />
+
+    <TextView
+        android:id="@+id/Text8"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+
+        android:text="@string/mm" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:text="@string/ball_radius" />
+
+
+    <EditText
+        android:id="@+id/edtBm"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="98dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="87dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/ball_modulus" />
+
+    <TextView
+        android:id="@+id/Text9"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="109dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/gpa" />
+
+
+
+    <EditText
+        android:id="@+id/edtBp"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"  />
+
+    <TextView
+        android:id="@+id/Text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="145dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/ball_poisson_ratio" />
+
+    <TextView
+        android:id="@+id/Text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="145dp"
+        android:focusable="false"
+        android:background="#ffffff"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/flat_poisson_ratio" />
+
+    <TextView
+        android:id="@+id/Text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:text="@string/load" />
+
+
+
+    <EditText
+        android:id="@+id/edtCR"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/Text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="292dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/contact_radius" />
+
+    <TextView
+        android:id="@+id/Text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="309dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:text="@string/m" />
+
+
+    <EditText
+        android:id="@+id/edtPmoy"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="292dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:text="@string/mean_pressure" />
+
+    <EditText
+        android:id="@+id/edtPmax"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="357dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="348dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:text="@string/max_pressure" />
+
+    <EditText
+        android:id="@+id/edtDp"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="414dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="406dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/max_deformation" />
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="424dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/m" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="367dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/m2" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="309dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/mpa" />
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="366dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/mpa" />
+
+    <EditText
+        android:id="@+id/edtCa"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="357dp"
+        android:background="@drawable/boarder"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="348dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/contact_area" />
+
+    <TextView
+        android:id="@+id/Text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="53dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/n" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="236dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/sphere_plane" />
+
+</RelativeLayout>
