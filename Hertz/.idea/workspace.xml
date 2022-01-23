@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05fa78d2-bd9d-429a-8cb3-df220f41ed1f" name="Default Changelist" comment="" />
+    <list default="true" id="05fa78d2-bd9d-429a-8cb3-df220f41ed1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,29 +23,51 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="Hertz_GitLab/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master_local" />
+        <entry key="$PROJECT_DIR$/.." value="Branch1_local" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="246kxUHPUAAMqzcO7FyyLt0Pdub" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -127,7 +152,35 @@
       <option name="project" value="LOCAL" />
       <updated>1642961334569</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1642961793876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642961793877</updated>
+    </task>
+    <task id="LOCAL-00004" summary="com">
+      <created>1642967934605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642967934606</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Revert &quot;Deleted .gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock, .gradle/7.0.2/dependencies-accessors/gc.properties, .gradle/7.0.2/executionHistory/executionHistory.bin, .gradle/7.0.2/executionHistory/executionHistory.lock, .gradle/7.0.2/fileChanges/last-build.bin, .gradle/7.0.2/fileHashes/fileHashes.bin, .gradle/7.0.2/fileHashes/fileHashes.lock, .gradle/7.0.2/fileHashes/resourceHashesCache.bin, .gradle/7.0.2/javaCompile/classAnalysis.bin, .gradle/7.0.2/javaCompile/jarAnalysis.bin, .gradle/7.0.2/javaCompile/javaCompile.lock, .gradle/7.0.2/javaCompile/taskHistory.bin, .gradle/7.0.2/gc.properties, .gradle/buildOutputCleanup/buildOutputCleanup.lock, .gradle/buildOutputCleanup/cache.properties, .gradle/buildOutputCleanup/outputFiles.bin, .gradle/checksums/checksums.lock, .gradle/checksums/md5-checksums.bin, .gradle/checksums/sha1-checksums.bin, .gradle/vcs-1/gc.properties, .idea/libraries/Gradle__androidx_annotation_annotation_1_0_0.xml, .idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0.xml, .idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_collection_collection_1_0_0.xml, .idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml, .idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3.xml, .idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml, .idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_aar.xml, .idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_aar.xml, .idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml, .idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml, .idea/libraries/Gradle__androidx_test_runner_1_1_0_aar.xml, .idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml, .idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml, .idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml, .idea/libraries/Gradle__javax_inject_javax_inject_1.xml, .idea/libraries/Gradle__junit_junit_4_12.xml, .idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml, .idea/modules/app/Hertz.app.iml, .idea/modules/Hertz.iml, .idea/jarRepositories.xml&quot;&#10;&#10;This reverts commit 9024bf9f">
+      <created>1642969440339</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642969440339</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Revert &quot;Update Hertz/.gitignore, Hertz/.gitlab-ci.yml Deleted fastlane/Appfile, fastlane/Fastfile, Dockerfile, Gemfile, Gemfile.lock, README.md&quot;&#10;&#10;This reverts commit 021fa98c">
+      <created>1642969478124</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642969478124</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,9 +193,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="com" />
+    <MESSAGE value="Revert &quot;Deleted .gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock, .gradle/7.0.2/dependencies-accessors/gc.properties, .gradle/7.0.2/executionHistory/executionHistory.bin, .gradle/7.0.2/executionHistory/executionHistory.lock, .gradle/7.0.2/fileChanges/last-build.bin, .gradle/7.0.2/fileHashes/fileHashes.bin, .gradle/7.0.2/fileHashes/fileHashes.lock, .gradle/7.0.2/fileHashes/resourceHashesCache.bin, .gradle/7.0.2/javaCompile/classAnalysis.bin, .gradle/7.0.2/javaCompile/jarAnalysis.bin, .gradle/7.0.2/javaCompile/javaCompile.lock, .gradle/7.0.2/javaCompile/taskHistory.bin, .gradle/7.0.2/gc.properties, .gradle/buildOutputCleanup/buildOutputCleanup.lock, .gradle/buildOutputCleanup/cache.properties, .gradle/buildOutputCleanup/outputFiles.bin, .gradle/checksums/checksums.lock, .gradle/checksums/md5-checksums.bin, .gradle/checksums/sha1-checksums.bin, .gradle/vcs-1/gc.properties, .idea/libraries/Gradle__androidx_annotation_annotation_1_0_0.xml, .idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0.xml, .idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_collection_collection_1_0_0.xml, .idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml, .idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3.xml, .idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml, .idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml, .idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_aar.xml, .idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_aar.xml, .idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml, .idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml, .idea/libraries/Gradle__androidx_test_runner_1_1_0_aar.xml, .idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml, .idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml, .idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml, .idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml, .idea/libraries/Gradle__javax_inject_javax_inject_1.xml, .idea/libraries/Gradle__junit_junit_4_12.xml, .idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml, .idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml, .idea/modules/app/Hertz.app.iml, .idea/modules/Hertz.iml, .idea/jarRepositories.xml&quot;&#10;&#10;This reverts commit 9024bf9f" />
+    <MESSAGE value="Revert &quot;Update Hertz/.gitignore, Hertz/.gitlab-ci.yml Deleted fastlane/Appfile, fastlane/Fastfile, Dockerfile, Gemfile, Gemfile.lock, README.md&quot;&#10;&#10;This reverts commit 021fa98c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Update Hertz/.gitignore, Hertz/.gitlab-ci.yml Deleted fastlane/Appfile, fastlane/Fastfile, Dockerfile, Gemfile, Gemfile.lock, README.md&quot;&#10;&#10;This reverts commit 021fa98c" />
   </component>
 </project>
