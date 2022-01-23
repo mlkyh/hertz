@@ -10,7 +10,7 @@
   <component name="NewModuleRootManager">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../..">
-      <excludeFolder url="file://$MODULE_DIR$/../../../../Hertz/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
     </content>
     <orderEntry type="inheritedJdk" />

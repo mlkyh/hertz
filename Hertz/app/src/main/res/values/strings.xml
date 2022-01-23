@@ -1,12 +1,21 @@
 <resources>
-    <string name="app_name">Hertz</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">Hertz contact</string>
+    <string name="start">Start</string>
+    <string name="ball_radius">Ball radius</string>
+    <string name="contact_radius">Contact radius</string>
+    <string name="contact_area">Contact area</string>
+    <string name="mean_pressure">Mean pressure</string>
+    <string name="max_pressure">Max pressure</string>
+    <string name="max_deformation">Max deformation</string>
+    <string name="gpa">GPa</string>
+    <string name="ball_modulus">Ball modulus</string>
+    <string name="flat_modulus">Flat modulus</string>
+    <string name="m">µm</string>
+    <string name="m2">µm²</string>
+    <string name="mpa">MPa</string>
+    <string name="n">N</string>
+    <string name="mm">mm</string>
+    <string name="ball_poisson_ratio">Ball Poisson ratio</string>
+    <string name="flat_poisson_ratio">Flat Poisson ratio</string>
+    <string name="load">Load</string>
 </resources>
