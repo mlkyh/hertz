@@ -18,4 +18,18 @@
     <string name="ball_poisson_ratio">Ball Poisson ratio</string>
     <string name="flat_poisson_ratio">Flat Poisson ratio</string>
     <string name="load">Load</string>
+    <string name="FlatModulusHint">70</string>
+    <string name="FlatPoissonHint">0.17</string>
+    <string name="LoadHint">10</string>
+    <string name="RadiusHint">3</string>
+    <string name="BallModulusHint">200</string>
+    <string name="BallPoissonHint">0.3</string>
+    <string name="ResultsHint">###\ </string>
+    <string name="ball_on_flat">ball-on-flat</string>
+    <string name="RadiusPreset">3\ </string>
+    <string name="BallModulusPreset">200\ </string>
+    <string name="BallPoissonPreset">0.3\ </string>
+    <string name="FlatModulusPreset">70\ </string>
+    <string name="FlatPoissonPreset">0.17\ </string>
+    <string name="LoadPreset">10\ </string>
 </resources>

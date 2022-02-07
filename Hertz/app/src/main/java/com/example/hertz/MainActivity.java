@@ -1,13 +1,8 @@
 package com.example.hertz;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -20,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
    // boolean crunchifyAddition, mSubtract, crunchifyMultiplication, crunchifyDivision;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,37 +35,34 @@ public class MainActivity extends AppCompatActivity {
         TextDp = (EditText) findViewById(R.id.edtDp);
 
         //Preset values
-        TextBr.setText("10  ");
-        TextBm.setText("200  ");
-        TextBp.setText("0.3  ");
-        TextFm.setText("200  ");
-        TextFp.setText("0.3  ");
-        TextL.setText("10  ");
+        TextBr.setText(R.string.RadiusPreset);
+        TextBm.setText(R.string.BallModulusPreset);
+        TextBp.setText(R.string.BallPoissonPreset);
+        TextFm.setText(R.string.FlatModulusPreset);
+        TextFp.setText(R.string.FlatPoissonPreset);
+        TextL.setText(R.string.LoadPreset);
 
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
-                Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
-                Bp=Float.parseFloat(TextBp.getText() + "");
-                Fm= (float) ((Float.parseFloat(TextFm.getText() + ""))*Math.pow(10,9));
-                Fp=Float.parseFloat(TextFp.getText() + "");
-                L=Float.parseFloat(TextL.getText() + "");
-                Estar= (float) (1/((1-Math.pow(Bp,2))/Bm+(1-Math.pow(Fp,2))/Fm));
-                Cr= (float) ((Math.pow(3*L*Br/(4*Estar),0.3333333333333333))*Math.pow(10,6));
-                Ca=(float) (3.14159*Math.pow(Cr,2));
-                Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
-                Pmax= (float) (1.5*Pmoy);
-                Dp = (float) (Cr*Cr/(Br*1000));
+        button1.setOnClickListener(v -> {
+            Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
+            Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
+            Bp=Float.parseFloat(TextBp.getText() + "");
+            Fm= (float) ((Float.parseFloat(TextFm.getText() + ""))*Math.pow(10,9));
+            Fp=Float.parseFloat(TextFp.getText() + "");
+            L=Float.parseFloat(TextL.getText() + "");
+            Estar= (float) (1/((1-Math.pow(Bp,2))/Bm+(1-Math.pow(Fp,2))/Fm));
+            Cr= (float) ((Math.pow(3*L*Br/(4*Estar),0.3333333333333333))*Math.pow(10,6));
+            Ca=(float) (3.14159*Math.pow(Cr,2));
+            Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
+            Pmax= (float) (1.5*Pmoy);
+            Dp = (float) (Cr*Cr/(Br*1000));
 
-                TextCr.setText(Cr + "  ");
-                TextCa.setText(Ca + "  ");
-                TextPmoy.setText(Pmoy + "  ");
-                TextPmax.setText(Pmax + "  ");
-                TextDp.setText(Dp + "  ");
-            }
+            TextCr.setText(Cr + "  ");
+            TextCa.setText(Ca + "  ");
+            TextPmoy.setText(Pmoy + "  ");
+            TextPmax.setText(Pmax + "  ");
+            TextDp.setText(Dp + "  ");
         });
 
     }

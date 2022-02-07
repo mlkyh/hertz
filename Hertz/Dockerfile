@@ -1,13 +1,13 @@
 # This Dockerfile creates a static build image for CI
 
-FROM openjdk:8-jdk
+FROM openjdk:11-jdk
 
 # Just matched `app/build.gradle`
-ENV ANDROID_COMPILE_SDK "28"
+ENV ANDROID_COMPILE_SDK "30"
 # Just matched `app/build.gradle`
-ENV ANDROID_BUILD_TOOLS "28.0.3"
+ENV ANDROID_BUILD_TOOLS "32.0.0"
 # Version from https://developer.android.com/studio/releases/sdk-tools
-ENV ANDROID_SDK_TOOLS "24.4.1"
+ENV ANDROID_SDK_TOOLS "26.1.1"
 
 ENV ANDROID_HOME /android-sdk-linux
 ENV PATH="${PATH}:/android-sdk-linux/platform-tools/"

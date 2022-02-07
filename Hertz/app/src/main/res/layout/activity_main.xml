@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relative1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
     <EditText
+        android:hint="@string/FlatModulusHint"
         android:id="@+id/edtFm"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -23,7 +23,6 @@
         android:textAlignment="textEnd" />
 
     <TextView
-        android:id="@+id/Text10"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -36,11 +35,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/gpa" />
 
     <TextView
-        android:id="@+id/Text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="229dp"
@@ -50,10 +47,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/flat_modulus" />
 
     <EditText
+        android:hint="@string/FlatPoissonHint"
         android:id="@+id/edtFp"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -66,9 +63,11 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <EditText
+        android:hint="@string/LoadHint"
         android:id="@+id/edtL"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -81,7 +80,8 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
 
     <Button
@@ -99,6 +99,7 @@
         tools:ignore="UnknownId" />
 
     <EditText
+        android:hint="@string/RadiusHint"
         android:id="@+id/edtBr"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -112,10 +113,9 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-         />
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/Text8"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -143,6 +143,7 @@
 
 
     <EditText
+        android:hint="@string/BallModulusHint"
         android:id="@+id/edtBm"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -155,10 +156,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/Text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -172,11 +173,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/ball_modulus" />
+        android:text="@string/ball_modulus"
+        android:layout_alignStart="@id/Text1" />
 
     <TextView
-        android:id="@+id/Text9"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -189,12 +189,12 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/gpa" />
 
 
 
     <EditText
+        android:hint="@string/BallPoissonHint"
         android:id="@+id/edtBp"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -207,10 +207,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd"  />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/Text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -224,11 +224,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/ball_poisson_ratio" />
+        android:text="@string/ball_poisson_ratio"
+        android:layout_alignStart="@id/Text1" />
 
     <TextView
-        android:id="@+id/Text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -242,11 +241,10 @@
         android:background="#ffffff"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/flat_poisson_ratio" />
+        android:text="@string/flat_poisson_ratio"
+        android:layout_alignStart="@id/Text1" />
 
     <TextView
-        android:id="@+id/Text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -260,11 +258,13 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:text="@string/load" />
+        android:text="@string/load"
+        android:layout_alignStart="@id/Text1" />
 
 
 
     <EditText
+        android:hint="@string/ResultsHint"
         android:id="@+id/edtCR"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -277,10 +277,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/Text7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -293,11 +293,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/contact_radius" />
 
     <TextView
-        android:id="@+id/Text12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -313,6 +311,7 @@
 
 
     <EditText
+        android:hint="@string/ResultsHint"
         android:id="@+id/edtPmoy"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -327,7 +326,6 @@
 
 
     <TextView
-        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -341,9 +339,11 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:text="@string/mean_pressure" />
+        android:text="@string/mean_pressure"
+        android:layout_alignStart="@id/Text1" />
 
     <EditText
+        android:hint="@string/ResultsHint"
         android:id="@+id/edtPmax"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -356,10 +356,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/text7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -374,9 +374,11 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:text="@string/max_pressure" />
+        android:text="@string/max_pressure"
+        android:layout_alignStart="@id/Text1" />
 
     <EditText
+        android:hint="@string/ResultsHint"
         android:id="@+id/edtDp"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -389,10 +391,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/text9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -406,11 +408,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/max_deformation" />
+        android:text="@string/max_deformation"
+        android:layout_alignStart="@id/Text1" />
 
     <TextView
-        android:id="@+id/text11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -422,11 +423,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/m" />
 
     <TextView
-        android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -438,11 +437,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/m2" />
 
     <TextView
-        android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -454,11 +451,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/mpa" />
 
     <TextView
-        android:id="@+id/text8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -471,10 +466,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/mpa" />
 
     <EditText
+        android:hint="@string/ResultsHint"
         android:id="@+id/edtCa"
         android:layout_width="121dp"
         android:layout_height="40dp"
@@ -487,10 +482,10 @@
         android:background="@drawable/boarder"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:layout_alignParentStart="false" />
 
     <TextView
-        android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/Text1"
@@ -505,11 +500,10 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/contact_area" />
+        android:text="@string/contact_area"
+        android:layout_alignStart="@id/Text1" />
 
     <TextView
-        android:id="@+id/Text11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -521,11 +515,9 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
         android:text="@string/n" />
 
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="236dp"
         android:layout_height="150dp"
         android:layout_alignParentEnd="true"
@@ -534,6 +526,7 @@
         android:layout_marginEnd="13dp"
         android:layout_marginRight="13dp"
         android:layout_marginBottom="25dp"
-        app:srcCompat="@drawable/sphere_plane" />
+        app:srcCompat="@mipmap/sphere_plane"
+        android:contentDescription="@string/ball_on_flat" />
 
 </RelativeLayout>
