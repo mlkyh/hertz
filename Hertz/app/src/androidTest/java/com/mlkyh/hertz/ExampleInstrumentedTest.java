@@ -1,4 +1,4 @@
-package com.example.hertz;
+package com.mlkyh.hertz;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.example.hertz;
+package com.mlkyh.hertz;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

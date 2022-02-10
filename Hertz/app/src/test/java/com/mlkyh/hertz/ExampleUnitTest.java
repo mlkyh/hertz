@@ -1,4 +1,4 @@
-package com.example.hertz;
+package com.mlkyh.hertz;
 
 import org.junit.Test;
 
