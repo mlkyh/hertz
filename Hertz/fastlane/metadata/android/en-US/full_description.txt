@@ -1,0 +1,1 @@
+Hertz contact application provides calculation on static mechanical ball-on-flat contact using materials properties.
