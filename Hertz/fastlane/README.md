@@ -15,22 +15,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android buildDebug
-
-```sh
-[bundle exec] fastlane android buildDebug
-```
-
-Builds the debug code
-
-### android buildRelease
-
-```sh
-[bundle exec] fastlane android buildRelease
-```
-
-Builds the release code
-
 ### android test
 
 ```sh
@@ -39,37 +23,21 @@ Builds the release code
 
 Runs all the tests
 
-### android internal
+### android beta
 
 ```sh
-[bundle exec] fastlane android internal
+[bundle exec] fastlane android beta
 ```
 
-Submit a new Internal Build to Play Store
+Submit a new Beta Build to Crashlytics Beta
 
-### android promote_internal_to_alpha
+### android deploy
 
 ```sh
-[bundle exec] fastlane android promote_internal_to_alpha
+[bundle exec] fastlane android deploy
 ```
 
-Promote Internal to Alpha
-
-### android promote_alpha_to_beta
-
-```sh
-[bundle exec] fastlane android promote_alpha_to_beta
-```
-
-Promote Alpha to Beta
-
-### android promote_beta_to_production
-
-```sh
-[bundle exec] fastlane android promote_beta_to_production
-```
-
-Promote Beta to Production
+Deploy a new version to the Google Play
 
 ----
 
