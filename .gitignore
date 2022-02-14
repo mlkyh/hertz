@@ -1,7 +1,6 @@
 *.iml
 .gradle
 /local.properties
-/com.mlkyh.hertz.yml
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
