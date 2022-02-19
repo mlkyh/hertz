@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,13 +57,17 @@ public class MainActivity extends AppCompatActivity {
             Ca=(float) (3.14159*Math.pow(Cr,2));
             Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
             Pmax= (float) (1.5*Pmoy);
-            Dp = (float) (Cr*Cr/(Br*1000));
+            Dp = (float) (Cr*Cr/(Br*1000000));
 
-            TextCr.setText(Cr + "  ");
-            TextCa.setText(Ca + "  ");
-            TextPmoy.setText(Pmoy + "  ");
-            TextPmax.setText(Pmax + "  ");
-            TextDp.setText(Dp + "  ");
+            DecimalFormat dfrmt = new DecimalFormat("######.###");
+            //dfrmt.setMaximumFractionDigits(3);
+
+
+            TextCr.setText(dfrmt.format(Cr) + "  ");
+            TextCa.setText(dfrmt.format(Ca) + "  ");
+            TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
+            TextPmax.setText(dfrmt.format(Pmax) + "  ");
+            TextDp.setText(dfrmt.format(Dp) + "  ");
         });
 
     }
