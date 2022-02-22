@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="236dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:contentDescription="@string/ball_on_flat"
+        app:srcCompat="@mipmap/sphere_plane" />
 
     <EditText
         android:id="@+id/edtFp"
@@ -523,18 +534,6 @@
         android:focusableInTouchMode="false"
         android:importantForAutofill="no"
         android:text="@string/max_pressure" />
-
-    <ImageView
-        android:layout_width="236dp"
-        android:layout_height="150dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="6dp"
-        android:contentDescription="@string/ball_on_flat"
-        app:srcCompat="@mipmap/sphere_plane" />
 
     <Spinner
         android:id="@+id/spinner1"
