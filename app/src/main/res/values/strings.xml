@@ -32,6 +32,8 @@
     <string name="FlatModulusPreset">70\ </string>
     <string name="FlatPoissonPreset">0.17\ </string>
     <string name="LoadPreset">10\ </string>
+    <string name="BallMaterial">Ball Material</string>
+    <string name="FlatMaterial">Flat Material</string>
 
     <string-array name="Materials">
         <item>Aluminum</item>

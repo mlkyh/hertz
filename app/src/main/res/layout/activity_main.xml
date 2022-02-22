@@ -22,7 +22,8 @@
         android:hint="@string/FlatPoissonHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edtFm"
@@ -37,7 +38,8 @@
         android:hint="@string/FlatModulusHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="50dp"
@@ -81,7 +83,9 @@
         android:hint="@string/RadiusHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#009688"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="50dp"
@@ -124,7 +128,8 @@
         android:hint="@string/BallModulusHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -173,7 +178,8 @@
         android:hint="@string/BallPoissonHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -224,7 +230,9 @@
         android:hint="@string/LoadHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#009688"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -260,18 +268,18 @@
 
     <Button
         android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
+        style="@android:style/Widget.DeviceDefault.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
         android:layout_marginTop="300dp"
         android:text="@string/start"
+        android:textStyle="bold"
         tools:ignore="UnknownId" />
-
 
     <EditText
         android:id="@+id/edtPmax"
@@ -288,7 +296,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#F44336" />
 
     <EditText
         android:id="@+id/edtCR"
@@ -305,7 +314,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#F44336" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -348,7 +358,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#F44336" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -382,7 +393,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#F44336" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -473,7 +485,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:textColor="#F44336" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -525,25 +538,49 @@
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="150dp"
+        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="37dp"
-        android:layout_marginLeft="50dp"
 
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="55dp" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="150dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="221dp"
         android:layout_marginLeft="50dp"
-
         android:layout_marginTop="54dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/BallMaterial" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="@string/FlatMaterial" />
 
 
 </RelativeLayout>
