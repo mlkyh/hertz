@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,8 +30,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button1 = findViewById(R.id.button1);
         TextBr = findViewById(R.id.edtBr);
         TextBm = findViewById(R.id.edtBm);
         TextBp = findViewById(R.id.edtBp);
@@ -103,30 +103,52 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        button1.setOnClickListener(v -> {
-            Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
-            Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
-            Bp=(float) Float.parseFloat(TextBp.getText() + "");
-            Fm= (float) ((Float.parseFloat(TextFm.getText() + ""))*Math.pow(10,9));
-            Fp=(float) Float.parseFloat(TextFp.getText() + "");
-            L=(float) Float.parseFloat(TextL.getText() + "");
-            Estar= (float) (1/((1-Math.pow(Bp,2))/Bm+(1-Math.pow(Fp,2))/Fm));
-            Cr= (float) ((Math.pow(3*L*Br/(4*Estar),0.3333333333333333))*Math.pow(10,6));
-            Ca=(float) (3.14159*Math.pow(Cr,2));
-            Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
-            Pmax= (float) (1.5*Pmoy);
-            Dp = (float) (Cr*Cr/(Br*1000000));
 
-            DecimalFormat dfrmt = new DecimalFormat();
-            dfrmt.setMaximumFractionDigits(3);
+        new MultiTextWatcher()
+                .registerEditText(TextBr)
+                .registerEditText(TextBm)
+                .registerEditText(TextBp)
+                .registerEditText(TextL)
+                .registerEditText(TextFm)
+                .registerEditText(TextFp)
+                .setCallback(new MultiTextWatcher.TextWatcherWithInstance() {
+                    @Override
+                    public void beforeTextChanged(EditText editText, CharSequence s, int start, int count, int after) {
+
+                    }
+                    @Override
+                    public void onTextChanged(EditText editText, CharSequence s, int start, int before, int count) {
+                        Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
+                        Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
+                        Bp=(float) Float.parseFloat(TextBp.getText() + "");
+                        Fm= (float) ((Float.parseFloat(TextFm.getText() + ""))*Math.pow(10,9));
+                        Fp=(float) Float.parseFloat(TextFp.getText() + "");
+                        L=(float) Float.parseFloat(TextL.getText() + "");
+                        Estar= (float) (1/((1-Math.pow(Bp,2))/Bm+(1-Math.pow(Fp,2))/Fm));
+                        Cr= (float) ((Math.pow(3*L*Br/(4*Estar),0.3333333333333333))*Math.pow(10,6));
+                        Ca=(float) (3.14159*Math.pow(Cr,2));
+                        Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
+                        Pmax= (float) (1.5*Pmoy);
+                        Dp = (float) (Cr*Cr/(Br*1000000));
+
+                        DecimalFormat dfrmt = new DecimalFormat();
+                        dfrmt.setMaximumFractionDigits(3);
 
 
-            TextCr.setText(dfrmt.format(Cr) + "  ");
-            TextCa.setText(dfrmt.format(Ca) + "  ");
-            TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
-            TextPmax.setText(dfrmt.format(Pmax) + "  ");
-            TextDp.setText(dfrmt.format(Dp) + "  ");
-        });
+                        TextCr.setText(dfrmt.format(Cr) + "  ");
+                        TextCa.setText(dfrmt.format(Ca) + "  ");
+                        TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
+                        TextPmax.setText(dfrmt.format(Pmax) + "  ");
+                        TextDp.setText(dfrmt.format(Dp) + "  ");
+                    }
+
+                    @Override
+                    public void afterTextChanged(EditText editText, Editable editable) {
+
+                    }
+                });
+
+
 
     }
 

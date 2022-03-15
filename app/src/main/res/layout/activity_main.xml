@@ -4,17 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="#009688" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="320dp"
+        android:background="#F44336" />
+
     <ImageView
-        android:layout_width="236dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="143dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="@string/ball_on_flat"
         app:srcCompat="@mipmap/sphere_plane" />
 
@@ -277,21 +297,6 @@
         android:text="@string/n" />
 
 
-    <Button
-        android:id="@+id/button1"
-        style="@android:style/Widget.DeviceDefault.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edt1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="162dp"
-        android:layout_marginLeft="162dp"
-        android:layout_marginTop="300dp"
-        android:text="@string/start"
-        android:textStyle="bold"
-        tools:ignore="UnknownId" />
-
     <EditText
         android:id="@+id/edtPmax"
         android:layout_width="121dp"
@@ -308,7 +313,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
-        android:textColor="#F44336" />
+         />
 
     <EditText
         android:id="@+id/edtCR"
@@ -326,7 +331,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
-        android:textColor="#F44336" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -369,8 +374,7 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd"
-        android:textColor="#F44336" />
+        android:textAlignment="textEnd" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -405,7 +409,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
-        android:textColor="#F44336" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -497,7 +501,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
-        android:textColor="#F44336" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -536,38 +540,26 @@
         android:text="@string/max_pressure" />
 
     <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="72dp" />
+
+    <Spinner
         android:id="@+id/spinner1"
         style="@android:style/Widget.DeviceDefault.Light.Spinner"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="37dp"
+        android:layout_marginStart="33dp"
 
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="55dp" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="221dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="54dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/BallMaterial" />
+        android:layout_marginTop="73dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -576,10 +568,54 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:text="@string/FlatMaterial" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="53dp"
+        android:text="@string/BallMaterial" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="331dp"
+        android:text="Results"
+        android:textColor="#FBFAFA"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="11dp"
+        android:text="Materials selection"
+        android:textColor="#F6F5F5"
+        android:textSize="20sp" />
+
+
 
 
 </RelativeLayout>
