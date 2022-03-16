@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity
                     }
                     @Override
                     public void onTextChanged(EditText editText, CharSequence s, int start, int before, int count) {
+                        if(count!=0){
                         Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
                         Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
                         Bp=(float) Float.parseFloat(TextBp.getText() + "");
@@ -140,11 +141,11 @@ public class MainActivity extends AppCompatActivity
                         TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
                         TextPmax.setText(dfrmt.format(Pmax) + "  ");
                         TextDp.setText(dfrmt.format(Dp) + "  ");
-                    }
+                    }}
 
                     @Override
                     public void afterTextChanged(EditText editText, Editable editable) {
-
+                        int count = 0;
                     }
                 });
 
