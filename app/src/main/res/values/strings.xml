@@ -18,20 +18,20 @@
     <string name="ball_poisson_ratio">Ball Poisson ratio</string>
     <string name="flat_poisson_ratio">Flat Poisson ratio</string>
     <string name="load">Load</string>
-    <string name="FlatModulusHint">70\ </string>
-    <string name="FlatPoissonHint">0.17\ </string>
-    <string name="LoadHint">10\ </string>
-    <string name="RadiusHint">3\ </string>
-    <string name="BallModulusHint">200\ </string>
-    <string name="BallPoissonHint">0.3\ </string>
-    <string name="ResultsHint">###\ </string>
+    <string name="FlatModulusHint">70</string>
+    <string name="FlatPoissonHint">0.17</string>
+    <string name="LoadHint">10</string>
+    <string name="RadiusHint">3</string>
+    <string name="BallModulusHint">200</string>
+    <string name="BallPoissonHint">0.3</string>
+    <string name="ResultsHint">###</string>
     <string name="ball_on_flat">ball-on-flat</string>
-    <string name="RadiusPreset">3\ </string>
-    <string name="BallModulusPreset">200\ </string>
-    <string name="BallPoissonPreset">0.3\ </string>
-    <string name="FlatModulusPreset">70\ </string>
-    <string name="FlatPoissonPreset">0.17\ </string>
-    <string name="LoadPreset">10\ </string>
+    <string name="RadiusPreset">3</string>
+    <string name="BallModulusPreset">200</string>
+    <string name="BallPoissonPreset">0.3</string>
+    <string name="FlatModulusPreset">70</string>
+    <string name="FlatPoissonPreset">0.17</string>
+    <string name="LoadPreset">10</string>
     <string name="BallMaterial">Ball Material</string>
     <string name="FlatMaterial">Flat Material</string>
 
@@ -68,68 +68,68 @@
     </string-array>
 
     <string-array name="Young">
-        <item>69\ </item>
-        <item>97\ </item>
-        <item>110\ </item>
-        <item>45\ </item>
-        <item>207\ </item>
-        <item>207\ </item>
-        <item>107\ </item>
-        <item>407\ </item>
-        <item>390\ </item>
-        <item>35\ </item>
-        <item>1000\ </item>
-        <item>70\ </item>
-        <item>30\ </item>
-        <item>420\ </item>
-        <item>450\ </item>
-        <item>304\ </item>
-        <item>650\ </item>
-        <item>200\ </item>
-        <item>3\ </item>
-        <item>0.5\ </item>
-        <item>3.7\ </item>
-        <item>3.1\ </item>
-        <item>2.3\ </item>
-        <item>2.5\ </item>
-        <item>3.3\ </item>
-        <item>3.2\ </item>
-        <item>0.60\ </item>
-        <item>3\ </item>
-        <item>0.01\ </item>
+        <item>69</item>
+        <item>97</item>
+        <item>110</item>
+        <item>45</item>
+        <item>207</item>
+        <item>207</item>
+        <item>107</item>
+        <item>407</item>
+        <item>390</item>
+        <item>35</item>
+        <item>1000</item>
+        <item>70</item>
+        <item>30</item>
+        <item>420</item>
+        <item>450</item>
+        <item>304</item>
+        <item>650</item>
+        <item>200</item>
+        <item>3</item>
+        <item>0.5</item>
+        <item>3.7</item>
+        <item>3.1</item>
+        <item>2.3</item>
+        <item>2.5</item>
+        <item>3.3</item>
+        <item>3.2</item>
+        <item>0.60</item>
+        <item>3</item>
+        <item>0.01</item>
     </string-array>
 
 
     <string-array name="Poisson">
-        <item>0.33\ </item>
-        <item>0.34\ </item>
-        <item>0.34\ </item>
-        <item>0.29\ </item>
-        <item>0.31\ </item>
-        <item>0.30\ </item>
-        <item>0.34\ </item>
-        <item>0.28\ </item>
-        <item>0.22\ </item>
-        <item>0.20\ </item>
-        <item>0.20\ </item>
-        <item>0.17\ </item>
-        <item>0.20\ </item>
-        <item>0.28\ </item>
-        <item>0.17\ </item>
-        <item>0.28\ </item>
-        <item>0.22\ </item>
-        <item>0.31\ </item>
-        <item>0.42\ </item>
-        <item>0.45\ </item>
-        <item>0.39\ </item>
-        <item>0.43\ </item>
-        <item>0.41\ </item>
-        <item>0.36\ </item>
-        <item>0.43\ </item>
-        <item>0.35\ </item>
-        <item>0.42\ </item>
-        <item>0.40\ </item>
-        <item>0.50\ </item>
+        <item>0.33</item>
+        <item>0.34</item>
+        <item>0.34</item>
+        <item>0.29</item>
+        <item>0.31</item>
+        <item>0.30</item>
+        <item>0.34</item>
+        <item>0.28</item>
+        <item>0.22</item>
+        <item>0.20</item>
+        <item>0.20</item>
+        <item>0.17</item>
+        <item>0.20</item>
+        <item>0.28</item>
+        <item>0.17</item>
+        <item>0.28</item>
+        <item>0.22</item>
+        <item>0.31</item>
+        <item>0.42</item>
+        <item>0.45</item>
+        <item>0.39</item>
+        <item>0.43</item>
+        <item>0.41</item>
+        <item>0.36</item>
+        <item>0.43</item>
+        <item>0.35</item>
+        <item>0.42</item>
+        <item>0.40</item>
+        <item>0.50</item>
     </string-array>
 
 </resources>

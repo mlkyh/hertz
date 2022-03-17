@@ -118,30 +118,36 @@ public class MainActivity extends AppCompatActivity
                     }
                     @Override
                     public void onTextChanged(EditText editText, CharSequence s, int start, int before, int count) {
-                        if(count!=0){
-                        Br= (float) ((Float.parseFloat(TextBr.getText() + ""))*Math.pow(10,-3));
-                        Bm= (float) ((Float.parseFloat(TextBm.getText() + ""))*Math.pow(10,9));
-                        Bp=(float) Float.parseFloat(TextBp.getText() + "");
-                        Fm= (float) ((Float.parseFloat(TextFm.getText() + ""))*Math.pow(10,9));
-                        Fp=(float) Float.parseFloat(TextFp.getText() + "");
-                        L=(float) Float.parseFloat(TextL.getText() + "");
-                        Estar= (float) (1/((1-Math.pow(Bp,2))/Bm+(1-Math.pow(Fp,2))/Fm));
-                        Cr= (float) ((Math.pow(3*L*Br/(4*Estar),0.3333333333333333))*Math.pow(10,6));
-                        Ca=(float) (3.14159*Math.pow(Cr,2));
-                        Pmoy= (float) ((float) (L*Math.pow(10,6)) /(3.14159*Math.pow(Cr,2)));
-                        Pmax= (float) (1.5*Pmoy);
-                        Dp = (float) (Cr*Cr/(Br*1000000));
+                        if(count!=0) {
+                            try {
+                                Br = (float) ((Float.parseFloat(TextBr.getText() + "")) * Math.pow(10, -3));
+                                Bm = (float) ((Float.parseFloat(TextBm.getText() + "")) * Math.pow(10, 9));
+                                Bp = (float) Float.parseFloat(TextBp.getText() + "");
+                                Fm = (float) ((Float.parseFloat(TextFm.getText() + "")) * Math.pow(10, 9));
+                                Fp = (float) Float.parseFloat(TextFp.getText() + "");
+                                L = (float) Float.parseFloat(TextL.getText() + "");
+                                Estar = (float) (1 / ((1 - Math.pow(Bp, 2)) / Bm + (1 - Math.pow(Fp, 2)) / Fm));
+                                Cr = (float) ((Math.pow(3 * L * Br / (4 * Estar), 0.3333333333333333)) * Math.pow(10, 6));
+                                Ca = (float) (3.14159 * Math.pow(Cr, 2));
+                                Pmoy = (float) ((float) (L * Math.pow(10, 6)) / (3.14159 * Math.pow(Cr, 2)));
+                                Pmax = (float) (1.5 * Pmoy);
+                                Dp = (float) (Cr * Cr / (Br * 1000000));
 
-                        DecimalFormat dfrmt = new DecimalFormat();
-                        dfrmt.setMaximumFractionDigits(3);
+                                DecimalFormat dfrmt = new DecimalFormat();
+                                dfrmt.setMaximumFractionDigits(3);
 
 
-                        TextCr.setText(dfrmt.format(Cr) + "  ");
-                        TextCa.setText(dfrmt.format(Ca) + "  ");
-                        TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
-                        TextPmax.setText(dfrmt.format(Pmax) + "  ");
-                        TextDp.setText(dfrmt.format(Dp) + "  ");
-                    }}
+                                TextCr.setText(dfrmt.format(Cr) + "  ");
+                                TextCa.setText(dfrmt.format(Ca) + "  ");
+                                TextPmoy.setText(dfrmt.format(Pmoy) + "  ");
+                                TextPmax.setText(dfrmt.format(Pmax) + "  ");
+                                TextDp.setText(dfrmt.format(Dp) + "  ");
+                            }
+                            catch(Exception e) {
+                                //System.out.println("Something went wrong.");
+                            }
+
+                        }}
 
                     @Override
                     public void afterTextChanged(EditText editText, Editable editable) {

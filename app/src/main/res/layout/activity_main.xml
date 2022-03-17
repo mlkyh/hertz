@@ -57,7 +57,8 @@
         android:hint="@string/FlatPoissonHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd"
+         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textStyle="bold" />
 
     <EditText
@@ -73,7 +74,8 @@
         android:hint="@string/FlatModulusHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd"
+         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textStyle="bold" />
 
     <TextView
@@ -110,7 +112,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_gravity="end"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="127dp"
@@ -119,8 +120,10 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textColor="#009688"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+         />
 
     <TextView
         android:layout_width="50dp"
@@ -164,6 +167,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textStyle="bold" />
 
     <TextView
@@ -214,6 +218,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textStyle="bold" />
 
     <TextView
@@ -266,6 +271,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
         android:textColor="#009688"
         android:textStyle="bold" />
 
@@ -317,6 +323,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
          />
 
     <EditText
@@ -335,6 +342,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
          />
 
     <TextView
@@ -378,7 +386,8 @@
         android:hint="@string/ResultsHint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:paddingRight="5sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -413,6 +422,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
          />
 
     <TextView
@@ -505,6 +515,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
+        android:paddingRight="5sp"
          />
 
     <TextView
@@ -561,7 +572,6 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="33dp"
-
         android:layout_marginLeft="50dp"
         android:layout_marginTop="73dp" />
 
@@ -618,8 +628,5 @@
         android:text="Materials selection"
         android:textColor="#F6F5F5"
         android:textSize="20sp" />
-
-
-
 
 </RelativeLayout>
