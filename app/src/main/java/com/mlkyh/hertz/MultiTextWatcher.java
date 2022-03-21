@@ -8,9 +8,8 @@ public class MultiTextWatcher {
 
     private TextWatcherWithInstance callback;
 
-    public MultiTextWatcher setCallback(TextWatcherWithInstance callback) {
+    public void setCallback(TextWatcherWithInstance callback) {
         this.callback = callback;
-        return this;
     }
 
     public MultiTextWatcher registerEditText(final EditText editText) {

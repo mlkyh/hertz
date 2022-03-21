@@ -1,10 +1,13 @@
 package com.mlkyh.hertz;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -12,14 +15,11 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-               Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        Runnable runnable = () -> {
+           Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
         };
-new Handler().postDelayed(runnable, 1000);
+new Handler(Looper.getMainLooper()).postDelayed(runnable, 1000);
     }
 }
