@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/boarder.xml" value="0.1" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.1954954954954955" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.165" />
       </map>
     </option>

@@ -4,11 +4,14 @@
     <shared>
       <config>
         <device id="Nexus 5X" />
-        <device id="pixel_c" />
+        <device id="tv_4k" />
         <device id="pixel_5" />
-        <device id="_device_class_phone" />
-        <device id="wear_round_chin_320_290" />
+        <device id="_device_class_desktop" />
         <device id="_device_class_tablet" />
+        <device id="_device_class_foldable" />
+        <device id="_device_class_phone" />
+        <device id="pixel_c" />
+        <device id="wear_round_chin_320_290" />
         <option name="nonWearDeviceLastStateName" value="Portrait" />
       </config>
     </shared>
