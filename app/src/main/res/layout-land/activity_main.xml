@@ -59,17 +59,17 @@
 
     <TableRow>
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="30dp" />
-
-        <Spinner
             android:id="@+id/spinner1"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="30dp"
             />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+
     </TableRow>
         <TableRow>
             <TextView
@@ -267,17 +267,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/view5"
+        android:layout_alignStart="@id/view5"
         android:layout_alignLeft="@id/view5"
+        android:layout_alignTop="@id/view5"
+        android:layout_alignEnd="@id/view5"
         android:layout_alignRight="@id/view5"
         android:layout_alignBottom="@id/view5"
-        android:textAlignment="center"
         android:gravity="center"
         android:text="@string/materials_selection"
+        android:textAlignment="center"
         android:textColor="#F6F5F5"
-        android:textSize="20sp"
-        android:layout_alignStart="@id/view5"
-        android:layout_alignEnd="@id/view5" />
+        android:textSize="20sp" />
 
 
     <TableLayout
