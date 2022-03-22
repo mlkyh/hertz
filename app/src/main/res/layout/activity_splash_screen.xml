@@ -8,7 +8,6 @@
     tools:context=".SplashScreen">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="158dp"
         android:layout_height="213dp"
         android:layout_marginStart="124dp"

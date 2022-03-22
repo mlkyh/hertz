@@ -4,11 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -105,11 +103,11 @@ public class MainActivity extends AppCompatActivity
                 .registerEditText(TextFp)
                 .setCallback(new MultiTextWatcher.TextWatcherWithInstance() {
                     @Override
-                    public void beforeTextChanged(EditText editText, CharSequence s, int start, int count, int after) {
+                    public void beforeTextChanged() {
                     //no
                     }
                     @Override
-                    public void onTextChanged(EditText editText, CharSequence s, int start, int before, int count) {
+                    public void onTextChanged() {
 
                         try {
                             Br = (float) ((Float.parseFloat(TextBr.getText() + "")) * Math.pow(10, -3));
@@ -148,7 +146,7 @@ public class MainActivity extends AppCompatActivity
                         }
 
                     @Override
-                    public void afterTextChanged(EditText editText, Editable editable) {
+                    public void afterTextChanged() {
                         //no
                     }
                 });

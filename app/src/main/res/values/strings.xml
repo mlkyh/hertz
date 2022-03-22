@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hertz contact</string>
-    <string name="start">Start</string>
     <string name="ball_radius">Ball radius (mm)</string>
     <string name="contact_radius">Contact radius (µm)</string>
     <string name="contact_area">Contact area (µm²)</string>

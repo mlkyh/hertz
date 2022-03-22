@@ -16,17 +16,17 @@ public class MultiTextWatcher {
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                callback.beforeTextChanged(editText, s, start, count, after);
+                callback.beforeTextChanged();
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                callback.onTextChanged(editText, s, start, before, count);
+                callback.onTextChanged();
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-                callback.afterTextChanged(editText, editable);
+                callback.afterTextChanged();
             }
         });
 
@@ -34,10 +34,10 @@ public class MultiTextWatcher {
     }
 
     interface TextWatcherWithInstance {
-        void beforeTextChanged(EditText editText, CharSequence s, int start, int count, int after);
+        void beforeTextChanged();
 
-        void onTextChanged(EditText editText, CharSequence s, int start, int before, int count);
+        void onTextChanged();
 
-        void afterTextChanged(EditText editText, Editable editable);
+        void afterTextChanged();
     }
 }
