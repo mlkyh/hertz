@@ -10,52 +10,66 @@
 
     <View
         android:id="@+id/view5"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="49dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="10dp"
         android:layout_marginLeft="0dp"
         android:background="#009688" />
 
     <View
         android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_alignParentStart="true"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="320dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
         android:background="#F44336"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginEnd="10dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="121dp"
-        android:layout_below="@id/edtDp"
+        android:layout_width="348dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/view6"
+        android:layout_alignRight="@id/view6"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:layout_alignStart="@id/view6"
+        android:layout_alignEnd="@id/view6">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:text="" />
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
             android:contentDescription="@string/ball_on_flat"
+            android:gravity="center"
             app:srcCompat="@mipmap/sphere_plane" />
 
     </LinearLayout>
 
 
-
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/view5"
+        android:layout_alignRight="@id/view5"
         android:layout_marginTop="60dp">
 
     <TableRow>
@@ -282,20 +296,24 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
+        android:layout_alignTop="@id/view5"
+        android:layout_alignLeft="@id/view5"
+        android:layout_alignRight="@id/view5"
+        android:layout_alignBottom="@id/view5"
+        android:textAlignment="center"
+        android:gravity="center"
         android:text="Materials selection"
         android:textColor="#F6F5F5"
         android:textSize="20sp" />
 
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view6"
-        android:layout_marginStart="40dp"
+        android:layout_alignLeft="@id/view6"
+        android:layout_alignRight="@id/view6"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="40dp"
        >
 
         <TableRow>
@@ -330,7 +348,9 @@
         </TableRow>
 
 
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/edtCR"
@@ -345,8 +365,8 @@
                 android:focusable="false"
                 android:inputType="numberDecimal"
                 android:paddingRight="5sp"
-                android:textAlignment="textEnd"/>
-
+                android:textAlignment="textEnd"
+                />
 
             <EditText
                 android:id="@+id/edtPmoy"
@@ -361,8 +381,7 @@
                 android:focusable="false"
                 android:inputType="numberDecimal"
                 android:paddingRight="5sp"
-                android:textAlignment="textEnd"
-                android:gravity="center_vertical"/>
+                android:textAlignment="textEnd" />
         </TableRow>
 
         <TableRow>
@@ -444,6 +463,20 @@
                 android:gravity="center"
                 android:importantForAutofill="no"
                 android:text="@string/max_deformation" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:text="" />
         </TableRow>
 
         <TableRow>
@@ -462,31 +495,35 @@
                 android:inputType="numberDecimal"
                 android:paddingRight="5sp"
                 android:textAlignment="textEnd" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:text="" />
         </TableRow>
 
     </TableLayout>
-
-
-
-
-
-
-
-
 
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@id/view6"
+        android:layout_alignRight="@id/view6"
+        android:layout_alignBottom="@id/view6"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="331dp"
+        android:gravity="center"
         android:text="Results"
+        android:textAlignment="center"
         android:textColor="#FBFAFA"
         android:textSize="20sp" />
 
