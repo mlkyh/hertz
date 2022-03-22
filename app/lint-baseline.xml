@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Bumblebee | 2021.1.1 Patch 2">
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_alignParentLeft`; already defining `layout_alignParentStart` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_marginLeft`; already defining `layout_marginStart` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_alignParentRight`; already defining `layout_alignParentEnd` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_marginRight`; already defining `layout_marginEnd` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="28"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_alignLeft`; already defining `layout_alignStart` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="35"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_alignRight`; already defining `layout_alignEnd` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="36"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_marginLeft`; already defining `layout_marginStart` with `targetSdkVersion` 32">
+        <location
+            file="src/main/res/layout-land/activity_main.xml"
+            line="45"/>
+    </issue>
+
+</issues>
