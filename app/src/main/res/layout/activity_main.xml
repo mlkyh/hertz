@@ -23,20 +23,6 @@
         android:background="#F44336"
  />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="121dp"
-        android:layout_below="@id/edtDp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/ball_on_flat"
-            app:srcCompat="@mipmap/sphere_plane" />
-
-    </LinearLayout>
 
 
 
@@ -117,10 +103,11 @@
                 android:hint="@string/RadiusHint"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
                 android:textAlignment="textEnd"
                 android:textColor="#009688"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:padding="5sp"
+                tools:ignore="RtlCompat" />
             <EditText
                 android:id="@+id/edtL"
                 android:layout_width="0dp"
@@ -132,10 +119,11 @@
                 android:hint="@string/LoadHint"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
+                android:padding="5sp"
                 android:textAlignment="textEnd"
                 android:textColor="#009688"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
 
         </TableRow>
 
@@ -180,9 +168,10 @@
             android:hint="@string/BallModulusHint"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
-            android:paddingRight="5sp"
+            android:padding="5sp"
             android:textAlignment="textEnd"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
         <EditText
             android:id="@+id/edtFm"
             android:layout_width="0dp"
@@ -195,8 +184,9 @@
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:textAlignment="textEnd"
-            android:paddingRight="5sp"
-            android:textStyle="bold" />
+            android:padding="5sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
         </TableRow>
         <TableRow>
             <TextView
@@ -237,9 +227,10 @@
                 android:hint="@string/BallPoissonHint"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
+                android:padding="5sp"
                 android:textAlignment="textEnd"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
 
             <EditText
                 android:id="@+id/edtFp"
@@ -253,8 +244,9 @@
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
                 android:textAlignment="textEnd"
-                android:paddingRight="5sp"
-                android:textStyle="bold" />
+                android:padding="5sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
         </TableRow>
 
     </TableLayout>
@@ -265,7 +257,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
-        android:text="Materials selection"
+        android:text="@string/materials_selection"
         android:textColor="#F6F5F5"
         android:textSize="20sp" />
 
@@ -310,7 +302,6 @@
 
 
         <TableRow>
-
             <EditText
                 android:id="@+id/edtCR"
                 android:layout_width="0dp"
@@ -323,8 +314,9 @@
                 android:importantForAutofill="no"
                 android:focusable="false"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
-                android:textAlignment="textEnd"/>
+                android:padding="5sp"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
 
 
             <EditText
@@ -335,13 +327,14 @@
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/boarder"
+                android:focusable="false"
                 android:hint="@string/ResultsHint"
                 android:importantForAutofill="no"
-                android:focusable="false"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
+                android:padding="5sp"
                 android:textAlignment="textEnd"
-                android:gravity="center_vertical"/>
+                tools:ignore="RtlCompat"
+                />
         </TableRow>
 
         <TableRow>
@@ -387,8 +380,9 @@
                 android:importantForAutofill="no"
                 android:focusable="false"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
-                android:textAlignment="textEnd" />
+                android:padding="5sp"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
 
             <EditText
                 android:id="@+id/edtPmax"
@@ -402,8 +396,9 @@
                 android:importantForAutofill="no"
                 android:focusable="false"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
-                android:textAlignment="textEnd" />
+                android:padding="5sp"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
         </TableRow>
 
         <TableRow>
@@ -436,8 +431,18 @@
                 android:importantForAutofill="no"
                 android:focusable="false"
                 android:inputType="numberDecimal"
-                android:paddingRight="5sp"
-                android:textAlignment="textEnd" />
+                android:padding="5sp"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/ball_on_flat"
+                app:srcCompat="@mipmap/sphere_plane" />
         </TableRow>
 
     </TableLayout>
@@ -450,7 +455,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="172dp"
         android:layout_marginTop="331dp"
-        android:text="Results"
+        android:text="@string/Results"
         android:textColor="#FBFAFA"
         android:textSize="20sp" />
 

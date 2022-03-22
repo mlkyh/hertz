@@ -23,6 +23,8 @@
     <string name="LoadPreset">10</string>
     <string name="BallMaterial">Ball Material</string>
     <string name="FlatMaterial">Flat Material</string>
+    <string name="Results">Results</string>
+    <string name="materials_selection">Materials selection</string>
 
     <string-array name="Materials">
         <item>Aluminum</item>
