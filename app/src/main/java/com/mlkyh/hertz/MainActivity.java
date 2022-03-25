@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,11 +20,16 @@ public class MainActivity extends AppCompatActivity
     float Br,Bm,Bp,Fm,Fp,L,Estar,Cr,Ca,Pmoy,Pmax,Dp;
 
    // boolean crunchifyAddition, mSubtract, crunchifyMultiplication, crunchifyDivision;
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM) {
+            setTheme(R.style.darkTheme); //when dark mode is enabled, we use the dark theme
+        } else {
+            setTheme(R.style.AppTheme);  //default app theme
+        }
         setContentView(R.layout.activity_main);
         TextBr = findViewById(R.id.edtBr);
         TextBm = findViewById(R.id.edtBm);
