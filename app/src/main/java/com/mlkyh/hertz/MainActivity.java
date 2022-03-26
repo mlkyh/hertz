@@ -1,10 +1,14 @@
 package com.mlkyh.hertz;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -25,11 +29,20 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM) {
-            setTheme(R.style.darkTheme); //when dark mode is enabled, we use the dark theme
-        } else {
-            setTheme(R.style.AppTheme);  //default app theme
+        int currentNightMode = getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK;
+        switch (currentNightMode) {
+            case Configuration.UI_MODE_NIGHT_NO:
+                setTheme(R.style.AppTheme);
+                break;
+            case Configuration.UI_MODE_NIGHT_YES:
+                setTheme(R.style.darkTheme);
+                break;
+            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+                setTheme(R.style.AppTheme);// We don't know what mode we're in, assume notnight
         }
+
+
         setContentView(R.layout.activity_main);
         TextBr = findViewById(R.id.edtBr);
         TextBm = findViewById(R.id.edtBm);
