@@ -1,6 +1,0 @@
-Fdroid checklist:
-
-1 - Changer version dans app/build.gradle
-2 - Décommenter SHA dans gradle/wrapper/gradle-wrapper.properties
-3 - Mettre à jour la photo d'écran dans Fastlane
-4 - Nouveau fichier changelog dans Fastlane
